@@ -22,9 +22,15 @@ Os cinco princípios da programação orientada a objetos e design de código - 
 
 3. LSP - Princípio da Substituição de Liskov
 
+```A utilização de herença deve ser utilizada de forma contextualizada, evitando repassar atributos/metodos para outras classes que não utilizam os mesmos```
+
 4. ISP - Princípio da Segregação de Interfaces
 
+```Criar interfaces mais exutas para facilitar a mnutenção e evolução, evitando classes "gordas" causando acoplamentos prejudiciais às regras de negócio. Atentar-se também para evitar a criação exagerada de interfaces criadas de forma indevida```
+
 5. DIP - Princípio da Inversão de Dependências
+
+```Depender de abastrações de não de classes concretas, pois as abstrações mudaram menos, facilitando a mudança de comportamento em futuras evoluções do código.```
 
 Referências: 
 
