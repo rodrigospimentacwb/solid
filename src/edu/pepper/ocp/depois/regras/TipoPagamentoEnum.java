@@ -1,4 +1,4 @@
-package edu.pepper.srp.depois.regras;
+package edu.pepper.ocp.depois.regras;
 
 public enum TipoPagamentoEnum {
 

@@ -1,6 +1,6 @@
-package edu.pepper.srp.depois;
+package edu.pepper.ocp.depois;
 
-import edu.pepper.srp.depois.regras.TipoPagamentoEnum;
+import edu.pepper.ocp.depois.regras.TipoPagamentoEnum;
 
 import java.util.List;
 

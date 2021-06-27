@@ -1,6 +1,6 @@
-package edu.pepper.srp.depois.regras;
+package edu.pepper.ocp.depois.regras;
 
-import edu.pepper.srp.depois.Venda;
+import edu.pepper.ocp.depois.Venda;
 
 public class PagamentoCartaoCredito implements RegraDeDesconto {
 
