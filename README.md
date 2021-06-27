@@ -20,6 +20,8 @@ Os cinco princípios da programação orientada a objetos e design de código - 
 
 ```Entidades de software(classes, módulos, funções, etc.) devem estar abertas para ampliação, mas fechadas para modificação. Para isso utiliza-se de herança, interface e composição, fechando uma classe para modificações e caso outras regras surjam, vão sendo implementados novas classes.```
 
+Ex: Pacote OCP/Antes, vemos na classe 'Venda' dois metodos de calculo para desconto de pagamento, sendo eles no cartão de débito ou crédito. Se fosse necessário adicionar mais métodos de pagamentos como dinheiro e PIX, a classe teria que ser modificada adicionado mais dois novos metodos de pagamento. Aplicando do aberto/fechado criamos uma interface e classes de regras, podendo ser criadas novas conforme a regra de negocio, e deixando o método 'calculaDesconto()' da classe venda fechado para modificações.
+
 3. LSP - Princípio da Substituição de Liskov
 
 ```A utilização de herença deve ser utilizada de forma contextualizada, evitando repassar atributos/metodos para outras classes que não utilizam os mesmos```
