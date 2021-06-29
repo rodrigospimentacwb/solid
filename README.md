@@ -16,6 +16,12 @@ Os cinco princípios da programação orientada a objetos e design de código - 
 
 ```Uma classe deve tratar apenas as tarefas de sua reponsabilidade, evitando tratar reponsabilidades de outras classes dentro dela. Quanto mais bem definido for o que sua classe faz, mais coesa ela é.```
 
+Exemplo:
+
+-Pacote SRP/Antes: A classe 'Produto' tem um método de salvar, tendo que preparar a comunicação com o banco, e salvar o produto. Esta responsabilidade não é da classe Produto, além disso, se desejar persistir outros objetos, terá que replicar o código de salvar para as demais classes.
+
+-Pacote SRP/Depois: Foram geradas novas classes com suas devidas responsabilidades: 'ConnectionDAO' (Responsável pela comunicação com o banco), 'ProdutoDAO'(Utilizar a ConnectionDAO para salvar produto) e a 'ProdutoDAO'(Apenas de manter os dados do produto)
+
 ## 2. OCP - Princípio do Aberto/Fechado
 
 ```Entidades de software(classes, módulos, funções, etc.) devem estar abertas para ampliação, mas fechadas para modificação. Para isso utiliza-se de herança, interface e composição, fechando uma classe para modificações e caso outras regras surjam, vão sendo implementados novas classes.```
