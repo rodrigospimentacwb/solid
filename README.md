@@ -32,9 +32,15 @@ Exemplo:
 
 -Pacote OCP/Depois: Aplicando do aberto/fechado criamos uma interface e classes de regras, podendo ser criadas novas conforme a regra de negocio, e deixando o método 'calculaDesconto()' da classe venda fechado para modificações.
 
+Obs: Neste caso foi utilizado também o padrão de projeto STRATEGY.
+
 ## 3. LSP - Princípio da Substituição de Liskov
 
 ```A utilização de herença deve ser utilizada de forma contextualizada, evitando repassar atributos/metodos para outras classes que não utilizam os mesmos```
+
+-Pacote LSP/Antes: Classe 'ContaCorrenteComum' tem um método rende que faz sentido em outras classes que tenham rendimento, mas na classe 'ContaSalario'(com herança) não, pois ela não possui esta regra. É incorreto tmabém utilizar um lançamento de Exception neste caso.
+
+-Pacote LSP/Depois: Criado classe 'GerenciadorDeContas' que é chamada nas classes 'ContaSalario' e 'ContaCorrenteComum', sendo usado apenas os métodos que fazem parte da regra de negócio da classe.
 
 ## 4. ISP - Princípio da Segregação de Interfaces
 
