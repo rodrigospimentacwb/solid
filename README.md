@@ -46,6 +46,10 @@ Obs: Neste caso foi utilizado também o padrão de projeto STRATEGY.
 
 ```Criar interfaces mais exutas para facilitar a mnutenção e evolução, evitando classes "gordas" causando acoplamentos prejudiciais às regras de negócio. Atentar-se também para evitar a criação exagerada de interfaces criadas de forma indevida```
 
+-Pacote ISP/Antes: As classes 'Desenvolvedor' e 'Vendedor' extendem da classe abstrata 'Funcionario' sendo obrigadas a implementar os metodos 'getSalario' e 'getComissao', mas desenvolvedor não tem comissão.
+
+-Pacote ISP/Depois: Para corrigir o problema são criadas duas interfaces 'Comissionavel'(getComissao) e 'Convencional'(getSalario), onde a classe 'Funcionario' implementa 'Convencional', pois só possui salário, e a classe 'Vendedor' extende de 'Funcionario' e implementa 'Comissionavel', agora tendo 'getSalario' e 'getComissao'. Isso auxilia a não termos classes "gordas" com acoplamentos incorretos que prejudicam a regra de negócio. Também é importante não exagerar na criação de interfaces para não criar classes indevidas. 
+
 ## 5. DIP - Princípio da Inversão de Dependências
 
 ```Depender de abastrações de não de classes concretas, pois as abstrações mudaram menos, facilitando a mudança de comportamento em futuras evoluções do código.```
