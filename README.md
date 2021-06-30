@@ -54,6 +54,8 @@ Obs: Neste caso foi utilizado também o padrão de projeto STRATEGY.
 
 ```Depender de abastrações de não de classes concretas, pois as abstrações mudaram menos, facilitando a mudança de comportamento em futuras evoluções do código.```
 
+No exemplo de DIP, podemos fazer referência ao exemplo Do OCP onde começamos a depender da Interface 'RegraDeDesconto' e não mais da implementação da classe 'Venda', dependendo de uma abstração e não de uma implementação. 
+
 ## Referências: 
 
 [Princípios S.O.L.I.D: o que são e porque projetos devem utilizá-los (Mari Azevedo)](https://mari-azevedo.medium.com/princ%C3%ADpios-s-o-l-i-d-o-que-s%C3%A3o-e-porque-projetos-devem-utiliz%C3%A1-los-bf496b82b299)(24/06/2021 21:35)
